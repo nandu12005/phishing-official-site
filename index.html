@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+<a href="/logout">Logout</a>
+
+<h1>AI Phishing Message Detector</h1>
+
+<form method="post">
+<textarea name="message" placeholder="Enter message here..." required></textarea><br>
+<button type="submit">Detect</button>
+</form>
+
+<h2>{{ result }}</h2>
+</div>
+</body>
+</html>

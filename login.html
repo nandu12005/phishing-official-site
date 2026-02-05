@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h2>AI Phishing Detector</h2>
+        <form method="post">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+
+        <a href="/login/google" class="google-btn">Sign in with Google</a>
+
+        <p>New user? <a href="/register">Register</a></p>
+    </div>
+</body>
+</html>

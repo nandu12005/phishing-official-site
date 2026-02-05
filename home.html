@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="card">
+    <h2>AI Phishing Detector</h2>
+    <p>Welcome {{ user }}</p>
+
+    <form method="post" action="/detect">
+        <textarea name="message" placeholder="Paste message here..." rows="5" style="width:100%;border-radius:8px;padding:10px;"></textarea><br><br>
+        <button type="submit">Check Message</button>
+    </form>
+
+    {% if result %}
+        <p><strong>Result:</strong> {{ result }}</p>
+    {% endif %}
+
+    <br>
+    <a href="/logout">Logout</a>
+</div>
+</body>
+</html>
